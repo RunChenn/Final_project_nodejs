@@ -96,7 +96,7 @@ app.get('*', (req, res) => {
 });
 
 // node.js會找有沒有設定port給他， 如果沒有會給3000
-let port = process.env.port || 3000;
+let port = process.env.PORT || 3000;
 
 app.listen(port, () => {
     console.log('Listening on port 3000');
