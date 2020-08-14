@@ -16,5 +16,8 @@
     "bugs": {
         "url": "https://github.com/RunChenn/Final_project_nodejs/issues"
     },
-    "homepage": "https://github.com/RunChenn/Final_project_nodejs#readme"
+    "homepage": "https://github.com/RunChenn/Final_project_nodejs#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
 }
