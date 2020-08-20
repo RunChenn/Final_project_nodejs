@@ -49,6 +49,7 @@ app.get("/classA_backend", async(req, res) => {
     let data = await db.collection('classA').get();
     userArr = []
     data.forEach((doc) => {
+        console.log(doc.id)
         userArr.push({
             id: doc.id,
             name: doc.data().name,
@@ -72,6 +73,7 @@ app.get("/classA_frontend", (req, res) => {
 
 app.get('/who/:name', (req, res) => {
     var name = req.params.name;
+    console.log(name)
     res.send(`This is ${name}`);
 });
 
@@ -101,3 +103,5 @@ let port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log('Listening on port 3000');
 });
+
+// github連結跟heroku網址

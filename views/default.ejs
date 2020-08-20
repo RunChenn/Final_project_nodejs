@@ -4,19 +4,45 @@
 <head>
     <meta charset="utf-8">
     <title>實作EJS</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>
+    <!-- <h1>
         <%= title %>
+    </h1> -->
+    <h1>
+        台大資訊訓練班332期node.js課--Run
     </h1>
-    <ul>
+    <div class="content">
+        <ul>
+            <li>
+                <h2>Firebase測試：/firebase-test</h2>
+            </li>
+            <li>
+                <h2>前端控制：/classA_frontend</h2>
+            </li>
+            <li>
+                <h2>後端控制：/classA_backend</h2>
+            </li>
+            <li>
+                <h2>輸入變數姓名：/who/name</h2>
+            </li>
+            <li>
+                <h2>刪除一筆資料：/API/deleteMember?id=欲輸入id</h2>
+            </li>
+            <li>
+                <h2>新增一筆資料：/API/addMember?name=欲輸入姓名&gender=欲輸入性別&age=欲輸入性別</h2>
+            </li>
+        </ul>
+    </div>
+    <!-- <ul>
         <% for(let i=0; i<users.length; i++) {%>
             <li>
                 <%= users[i] %>
             </li>
             <% } %>
-    </ul>
+    </ul> -->
 </body>
 
 </html>
